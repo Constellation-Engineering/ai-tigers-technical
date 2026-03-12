@@ -14,8 +14,7 @@ Your goal is to build a web application using **TypeScript, React, and Next.js**
 
 The application will feature a basic hardcoded authentication layer, display a specific list of automotive dealer websites, and include a data-fetching engine that scrapes and analyzes live inventory data from those sites, displaying the results in a table and a chart.
 
-![Example Image: Application Homepage / Login Screen](./place-your-login-image-here.png)
-*(Replace this image with a screenshot of your template's login state)*
+![Example Image: Application Homepage / Login Screen](./example-auth.png)
 
 ---
 
@@ -38,18 +37,14 @@ The application will feature a basic hardcoded authentication layer, display a s
     * **Password:** `ConstellationInterview123!`
 * Once successfully logged in, the application must display the user’s name (e.g., "Example User") at the top right of the page.
 
-![Example Image: Logged In State showing User Name](./place-your-auth-header-image-here.png)
-*(Replace this image with a screenshot showing the user logged in)*
+![Example Image: Authenticated](./example-homepage.png)
 
 ### 2. Dealer Dashboard & Fetching
 Display the following list of auto dealer URLs. Next to this list, provide a single button labeled **"Fetch Data"**.
 
 **List of Dealers to Scrape:**
-1. https://www.princetonbmw.com/new-vehicles/
-2. https://www.bmwofbrooklyn.com/inventory/new
-3. https://www.napanissan.com/new-vehicles/
-4. https://www.ogaracoach.com/new-inventory/index.htm
-5. https://www.princetonhonda.com/inventory/new
+1. "https://www.bmwnyc.com/new-vehicles/",
+2. "https://www.bmwofbrooklyn.com/inventory/new"
 
 ### 3. Data Parsing & Table Output
 When the user clicks "Fetch Data", the application must parse the "new inventory" or "specials" page of each dealer website. The output should be displayed in a table with the following columns:
@@ -65,17 +60,12 @@ When the user clicks "Fetch Data", the application must parse the "new inventory
 3.  **Geographic Location:** Extract the physical location/city of the dealership from the page.
 4.  **Inventory Count:** Fetch the live count of vehicles in their inventory.
 
-![Example Image: Output Table showing scraped data](./place-your-table-image-here.png)
-*(Replace this image with a screenshot of your data table)*
+![Example Image: Authenticated](./example-completed.png)
 
 ### 4. Data Visualization
 Below the table, render a simple chart visualizing the extracted data.
 * **Y-Axis:** Count of Inventory
 * **X-Axis:** Dealer Name (or Normalized URL)
-
-![Example Image: Inventory Bar Chart](./place-your-chart-image-here.png)
-*(Replace this image with a screenshot of the simple chart)*
-
 ---
 
 ## 💡 Hints & Challenges
